@@ -1,0 +1,31 @@
+name: Test Formula
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Homebrew / macOS
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Register local tap
+        run: brew tap chaogao512/tap "$GITHUB_WORKSPACE"
+      - name: Check style
+        run: brew style chaogao512/tap
+      - name: Audit formula
+        run: brew audit --strict chaogao512/tap/oh-my-mirrorz
+      - name: Build and install from source
+        run: brew install --build-from-source chaogao512/tap/oh-my-mirrorz
+      - name: Run formula test
+        run: brew test chaogao512/tap/oh-my-mirrorz
+      - name: Smoke test
+        run: |
+          omm version
+          omm mirrors
