@@ -57,7 +57,7 @@ Homebrew 会自动添加 `chaogao512/tap`，并将 `omm` 放入 Homebrew 已管�
 
 | 软件 | Formula | 当前版本 | 上游 |
 | --- | --- | --- | --- |
-| oh-my-mirrorz | [`Formula/oh-my-mirrorz.rb`](Formula/oh-my-mirrorz.rb) | `v0.1.1` | [项目仓库](https://github.com/chaogao512/oh-my-mirrorz) |
+| oh-my-mirrorz | [`Formula/oh-my-mirrorz.rb`](Formula/oh-my-mirrorz.rb) | `v0.2.0` | [项目仓库](https://github.com/chaogao512/oh-my-mirrorz) |
 
 ## 验证安装
 

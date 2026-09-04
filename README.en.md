@@ -57,7 +57,7 @@ Current Formula:
 
 | Software | Formula | Version | Upstream |
 | --- | --- | --- | --- |
-| oh-my-mirrorz | [`Formula/oh-my-mirrorz.rb`](Formula/oh-my-mirrorz.rb) | `v0.1.1` | [Project repository](https://github.com/chaogao512/oh-my-mirrorz) |
+| oh-my-mirrorz | [`Formula/oh-my-mirrorz.rb`](Formula/oh-my-mirrorz.rb) | `v0.2.0` | [Project repository](https://github.com/chaogao512/oh-my-mirrorz) |
 
 ## Verify the installation
 
